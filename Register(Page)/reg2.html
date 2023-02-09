@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&family=Unbounded:wght@200;400;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Register(Page)/register-style-bs.css" />
+  </head>
+  <body>
+      <header>
+        <nav class="navbar navbar-expand-sm bg-body-tertiary py-0" >
+          <div class="container-fluid">
+            <a class="navbar-brand nav-pic" href="#">
+              <img src="/Assets/logo.png" alt="Logo" width="80" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link active rounded" href="/index.html">Home</a>
+                <a class="nav-link active rounded visual" aria-current="page" href="/Register(Page)/reg2.html">Registration</a>
+                <a class="nav-link active rounded" href="/Special(Page)/special2.html">Special</a>
+                <a class="nav-link active rounded" href="/Contact(Page)/contact2.html">Contact</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+  
+  </header>
+    <main class="container">    
+      <h1 class="display-2 fw-bold">Register and reserve your spot!</h1>
+        <form class="container-fluid border border-dark rounded" action="/Confirmation/confirmation.html">
+                <h3 class="fw-normal my-2">Fill out your details here</h3>
+               <div class="row my-2">
+                 <div class="col-md-6">
+                 <label class="my-1" for="first-name">First name</label>
+                 <input class="form-control" type="text" id="first-name" name="first-name" required placeholder="Enter your first name" minlength="1" maxlength="15">
+                 </div>
+                 <div class="col-md-6">
+                   <label class="my-1" for="last-name">Last name</label>
+                 <input class="form-control" type="text" id="last-name" name="last-name" required placeholder="Enter your last name" minlength="1" maxlength="15"> 
+                 </div>
+               </div class="row my-2">
+                  <div>
+                   <label class="form-check-label my-1">Choose a race:</label><br>
+                   <label class="form-check-label" for="full-marathon">Full marathon</label>
+                   <input class="form-check-label" type="radio" id="full-marathon" value="full-marathon" name="race">
+
+                   <label class="form-check-label" for="half-marathon">Half marathon</label>
+                   <input class="form-check-label" type="radio" id="half-marathon" value="half-marathon" name="race">
+
+                   <label class="form-check-label" for="beginners">Beginners 10k</label>
+                   <input class="form-check-label" type="radio" id="beginners" value="beginners" name="race">
+
+                   <label class="form-check-label" for="kids">Kids 5K</label>
+                   <input class="form-check-label" type="radio" id="kids" value="kids" name="race">
+                 </div>
+               <div class="row my-2">
+                 <div>
+                   <label class="form-check-label" for="hand-bikers">Hand bikers</label>
+                   <input class="form-check-label" type="radio" id="hand-bikers" value="hand-bikers" name="race">
+
+                   <label class="form-check-label" for="weelchairs">Weelchairs</label>
+                   <input class="form-check-label" type="radio" id="weelchairs" value="weelchairs" name="race">
+                   </div>
+               </div>
+                <div class="row my-2"> 
+                  <div class="col-md-6">
+                   <label class="my-1" for="a-g-selection">Select an age group</label>
+                   <select class="form-select" id="a-g-selection" name="age groups" required>
+                       <option value="Kids8-12">Kids 8-12</option>
+                       <option value="Young13-17">Young adults 13-17</option>
+                       <option value="Adults18plus" selected>Adults 18-50</option>
+                       <option value="Eldery51+">Eldery</option>
+                    </select>
+                  </div>
+                    <div class="col-md-6">
+                   <label class="my-1" for="password">Password</label>
+                   <input class="form-control"  type="password" id="password" name="password" required placeholder="Choose your password - Min 6 digits" minlength="6">
+                   </div>
+
+                 <div class="row my-2">
+                   <div class="col">
+                    <label class="my-1" for="email">Email</label>
+                    <input class="form-control"  type="email" id="email" name="email" placeholder="Enter your email" required minlength="5">
+                    </div>
+                 </div>
+                 <div>
+                   <h3 class="fw-normal my-2">Terms and conditions</h3>
+                    <ul>
+                       <li>level 1 first</li>
+                         <ul style="square">
+                           <li>level 2</li>
+                             <ol type="A">
+                               <li>I'm going to be nice and respectful to my competitors!</li>
+                               <li>I'm not gonna leave any sort of trash on the streets!</li>
+                             </ol>
+                         </ul>
+                       <li>level 1 second</li>
+                         <ul style="square">
+                           <li>I understand my data can be leaked to the dark web.</li>
+                         </ul>
+                     </ul>
+                </div>
+                <div class="row my-2">
+                     <div class="form-check prob1">
+                          <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+                          <input class="form-check-input " type="checkbox" id="terms" name="terms" required>
+                     </div>
+              </div>
+               <div class="col prob1">
+                  <button class="btn btn-primary my-2" type="submit">Submit</button>
+                  </div>
+               </div>
+                </div>
+       </form>
+
+
+    </main>
+    <footer >
+      <div class="container">
+        <div class="row">
+              <div class="col-6 align-self-end">CABERLIN</div>
+              <div class="col-6">
+                  <nav class="navbar navbar-expand bg-body-tertiary">
+                        <!-- <div class="navbar-nav ms-auto" style="background-color:  #CAF0F8;"> -->
+                          <div class="navbar-nav ms-auto">
+                            <a class="nav-link rounded" href="/index.html">Home</a>
+                           <a class="nav-link rounded" href="Special(Page)/special2.html">Special</a>
+                           <a class="nav-link rounded" href="/Contact(Page)/contact2.html">Contact</a>
+                        </div>
+                  </nav>
+              </div>
+          </div>
+        <hr>
+        <div class="row pb-4 ">
+          <div class="col-12 text-center">
+                  <div>
+                        <span ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        </svg>
+                        </span>
+                        <span ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        </svg>
+                        </span>
+                        <span ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        </svg>
+                        </span>
+                   </div>
+                   <div>
+                    &#169;2010-2023 Privacy - Terms	
+                    </div>
+          </div>
+        </div>
+     </div>   
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>  
+  </body>
+</html>
